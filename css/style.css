@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0B0624;
+    color: #F5F5F5;
+}
+
+/* HEADER */
+.header {
+    background: #0B0624;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 90px;
+    filter: drop-shadow(0 0 12px rgba(199,125,255,0.5));
+}
+
+.nav a {
+    color: #E6B6FF;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    padding: 100px 20px;
+    text-align: center;
+    background: radial-gradient(circle, #3A145F, #0B0624);
+}
+
+.hero h1 {
+    color: #E6B6FF;
+    font-size: 2.2rem;
+}
+
+.hero p {
+    margin-top: 15px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 36px;
+    background: linear-gradient(135deg, #6A1FA3, #C77DFF);
+    color: #0B0624;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* SECTIONS */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #E6B6FF;
+    margin-bottom: 40px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #140A3A;
+    padding: 30px;
+    width: 260px;
+    border-radius: 16px;
+    border: 1px solid #3A145F;
+}
+
+.projeto {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 25px rgba(199,125,255,0.4);
+}
+
+/* PASSOS */
+.passos {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #E6B6FF;
+    font-weight: bold;
+}
+
+/* FORM */
+form {
+    max-width: 420px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, select, textarea {
+    padding: 14px;
+    border-radius: 8px;
+    border: none;
+    background: #140A3A;
+    color: #F5F5F5;
+}
+
+textarea {
+    resize: none;
+    height: 120px;
+}
+
+button {
+    padding: 14px;
+    background: linear-gradient(135deg, #6A1FA3, #C77DFF);
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+    background: #050212;
+    padding: 25px;
+    text-align: center;
+    color: #E6B6FF;
+}
