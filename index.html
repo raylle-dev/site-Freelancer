@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raylle | Desenvolvedora Front-End</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">
+        <img src="./images/logo.jpeg.jpeg" alt="Raylle Desenvolvedora Front-End">
+    </div>
+
+    <nav class="nav">
+        <a href="#servicos">Serviços</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Orçamento</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Design e tecnologia para destacar você no digital</h1>
+    <p>Criação de logos, sites modernos e currículos profissionais em PDF</p>
+    <a href="#contato" class="btn">Solicitar orçamento</a>
+</section>
+
+<section id="servicos">
+    <h2>Serviços</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>🎨 Criação de Logos</h3>
+            <p>Identidade visual moderna e profissional.</p>
+        </div>
+
+        <div class="card">
+            <h3>💻 Criação de Sites</h3>
+            <p>Sites rápidos, responsivos e elegantes.</p>
+        </div>
+
+        <div class="card">
+            <h3>📄 Currículos em PDF</h3>
+            <p>Currículos organizados e prontos para seleção.</p>
+        </div>
+    </div>
+</section>
+
+<section id="como-funciona">
+    <h2>Como funciona</h2>
+
+    <div class="passos">
+        <div>1️⃣ Você envia a ideia</div>
+        <div>2️⃣ Recebe o orçamento</div>
+        <div>3️⃣ Desenvolvimento</div>
+        <div>4️⃣ Entrega final</div>
+    </div>
+</section>
+
+<section id="projetos">
+    <h2>Projetos</h2>
+
+    <div class="cards">
+        <a href="https://raylle-dev.github.io/Advocacia-RBS/" target="_blank" class="card projeto">
+            <h3>⚖️ Advocacia RBS</h3>
+            <p>Site institucional jurídico.</p>
+        </a>
+
+        <a href="https://raylle-dev.github.io/vision-board-2026/" target="_blank" class="card projeto">
+            <h3>✨ Vision Board 2026</h3>
+            <p>Projeto visual e interativo.</p>
+        </a>
+
+        <a href="https://raylle-dev.github.io/Raylle-Portfolio/" target="_blank" class="card projeto">
+            <h3>💜 Meu Portfólio</h3>
+            <p>Apresentação profissional.</p>
+        </a>
+    </div>
+</section>
+
+<section id="contato">
+    <h2>Solicite seu orçamento</h2>
+
+    <form action="https://formsubmit.co/raylle.developer@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="Novo pedido de orçamento">
+        <input type="hidden" name="_next" value="obrigado.html">
+
+        <input type="text" name="Nome" placeholder="Seu nome" required>
+        <input type="email" name="Email" placeholder="Seu e-mail" required>
+
+        <select name="Serviço" required>
+            <option value="">Selecione o serviço</option>
+            <option>Criação de Logo</option>
+            <option>Criação de Site</option>
+            <option>Currículo em PDF</option>
+        </select>
+
+        <textarea name="Mensagem" placeholder="Descreva o que você precisa" required></textarea>
+
+        <button type="submit">Enviar orçamento</button>
+    </form>
+</section>
+
+<footer class="footer">
+    <p>© 2026 • Raylle • Desenvolvedora Front-End</p>
+</footer>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
