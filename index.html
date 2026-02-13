@@ -85,26 +85,30 @@
 <section id="contato">
     <h2>Solicite seu orçamento</h2>
 
-    <form 
+   <form 
   action="https://formsubmit.co/raylle.developer@gmail.com" 
   method="POST"
 >
-
-    <!-- desativa captcha -->
+    <!-- DESATIVA CAPTCHA -->
     <input type="hidden" name="_captcha" value="false">
 
-    <!-- assunto do e-mail -->
+    <!-- ASSUNTO DO EMAIL -->
     <input type="hidden" name="_subject" value="Novo pedido de orçamento">
 
-    <!-- redirecionamento após envio -->
-    <input type="hidden" name="_next" value="https://raylle-dev.github.io/site-freelancer/obrigado.html">
+    <!-- REDIRECIONAMENTO FORÇADO -->
+    <input 
+      type="hidden" 
+      name="_next" 
+      value="https://raylle-dev.github.io/site-Freelancer/obrigado.html"
+    >
 
-    <!-- campos visíveis -->
+    <!-- FORMATO DO EMAIL -->
+    <input type="hidden" name="_template" value="table">
+
     <input type="text" name="Nome" placeholder="Seu nome" required>
-
     <input type="email" name="Email" placeholder="Seu e-mail" required>
 
-    <select name="Servico" required>
+    <select name="Serviço" required>
         <option value="">Selecione o serviço</option>
         <option>Criação de Logo</option>
         <option>Criação de Site</option>
