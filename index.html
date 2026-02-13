@@ -85,25 +85,36 @@
 <section id="contato">
     <h2>Solicite seu orçamento</h2>
 
-    <form action="https://formsubmit.co/raylle.developer@gmail.com" method="POST">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_subject" value="Novo pedido de orçamento">
-        <input type="hidden" name="_next" value="obrigado.html">
+    <form 
+  action="https://formsubmit.co/raylle.developer@gmail.com" 
+  method="POST"
+>
 
-        <input type="text" name="Nome" placeholder="Seu nome" required>
-        <input type="email" name="Email" placeholder="Seu e-mail" required>
+    <!-- desativa captcha -->
+    <input type="hidden" name="_captcha" value="false">
 
-        <select name="Serviço" required>
-            <option value="">Selecione o serviço</option>
-            <option>Criação de Logo</option>
-            <option>Criação de Site</option>
-            <option>Currículo em PDF</option>
-        </select>
+    <!-- assunto do e-mail -->
+    <input type="hidden" name="_subject" value="Novo pedido de orçamento">
 
-        <textarea name="Mensagem" placeholder="Descreva o que você precisa" required></textarea>
+    <!-- redirecionamento após envio -->
+    <input type="hidden" name="_next" value="https://raylle-dev.github.io/site-freelancer/obrigado.html">
 
-        <button type="submit">Enviar orçamento</button>
-    </form>
+    <!-- campos visíveis -->
+    <input type="text" name="Nome" placeholder="Seu nome" required>
+
+    <input type="email" name="Email" placeholder="Seu e-mail" required>
+
+    <select name="Servico" required>
+        <option value="">Selecione o serviço</option>
+        <option>Criação de Logo</option>
+        <option>Criação de Site</option>
+        <option>Currículo em PDF</option>
+    </select>
+
+    <textarea name="Mensagem" placeholder="Descreva o que você precisa" required></textarea>
+
+    <button type="submit">Enviar orçamento</button>
+</form>
 </section>
 
 <footer class="footer">
