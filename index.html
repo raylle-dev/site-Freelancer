@@ -85,39 +85,45 @@
 <section id="contato">
     <h2>Solicite seu orçamento</h2>
 
-   <form 
+  <form 
   action="https://formsubmit.co/raylle.developer@gmail.com" 
   method="POST"
 >
-    <!-- DESATIVA CAPTCHA -->
-    <input type="hidden" name="_captcha" value="false">
 
-    <!-- ASSUNTO DO EMAIL -->
-    <input type="hidden" name="_subject" value="Novo pedido de orçamento">
+  <!-- DESATIVA CAPTCHA -->
+  <input type="hidden" name="_captcha" value="false">
 
-    <!-- REDIRECIONAMENTO FORÇADO -->
-    <input 
-      type="hidden" 
-      name="_next" 
-      value="https://raylle-dev.github.io/site-Freelancer/obrigado.html"
-    >
+  <!-- ASSUNTO DO EMAIL -->
+  <input type="hidden" name="_subject" value="Novo pedido de orçamento">
 
-    <!-- FORMATO DO EMAIL -->
-    <input type="hidden" name="_template" value="table">
+  <!-- FORMATO DO EMAIL -->
+  <input type="hidden" name="_template" value="table">
 
-    <input type="text" name="Nome" placeholder="Seu nome" required>
-    <input type="email" name="Email" placeholder="Seu e-mail" required>
+  <!-- REDIRECIONAMENTO -->
+  <input 
+    type="hidden" 
+    name="_next" 
+    value="https://raylle-dev.github.io/site-Freelancer/obrigado.html"
+  >
 
-    <select name="Serviço" required>
-        <option value="">Selecione o serviço</option>
-        <option>Criação de Logo</option>
-        <option>Criação de Site</option>
-        <option>Currículo em PDF</option>
-    </select>
+  <input type="text" name="Nome" placeholder="Seu nome" required>
 
-    <textarea name="Mensagem" placeholder="Descreva o que você precisa" required></textarea>
+  <input type="email" name="Email" placeholder="Seu e-mail" required>
 
-    <button type="submit">Enviar orçamento</button>
+  <select name="Servico" required>
+    <option value="">Selecione o serviço</option>
+    <option>Criação de Logo</option>
+    <option>Criação de Site</option>
+    <option>Currículo em PDF</option>
+  </select>
+
+  <textarea 
+    name="Mensagem" 
+    placeholder="Descreva o que você precisa" 
+    required
+  ></textarea>
+
+  <button type="submit">Enviar orçamento</button>
 </form>
 </section>
 
